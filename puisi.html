@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&family=Satisfy&display=swap');
+        
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        .puisi-content{
+            position:absolute;
+            right: 0;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            background-color: black;
+            color:white;
+            z-index:2;
+        }
+
+        header{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            padding: 40px 100px;
+            z-index: 10;
+        }
+
+
+        .puisi-sajak{
+            position:relative;
+            z-index: 10;
+        }
+
+
+        .puisi-sajak h2{
+            font-size: 5em;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+
+
+        .puisi-sajak h3{
+            font-size: 4em;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+
+
+        .puisi-sajak p{
+            font-size: 1.1em;
+            color: #fff;
+            margin: 20px 0;
+            font-weight: 400;
+            max-width: 700px;
+        }
+
+
+
+        #txtArea-puisi{
+            display:block;
+            opacity: 0.5;
+            color: black;
+            width: 100%;
+            height: 100px;
+        }
+
+
+        .pautan{
+            position:absolute;
+            bottom: 20px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pautan li{
+            list-style: none;
+        }
+
+        .pautan li a{
+            display:inline-block;
+            margin-right:20px;
+            transform: scale(0.85);
+            transition: 0.5s;
+        }
+
+        .pautan li a:hover {
+            filter: invert(1);
+            transform: scale(0.9) translateX(10px) translateY(-10px);
+        }
+
+
+        .puisi-sajak a{
+            display: inline-block;
+            font-size: 1em;
+            background: #fff;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+            color: #111;
+            letter-spacing: 2px;
+            transition: 0.2s;
+        }
+
+
+        .puisi-sajak a:hover{
+            background: rgb(36,66,43);
+            font-weight:bold;
+            color: rgb(3,37,13);
+            letter-spacing: 6px;
+        }
+
+
+        .puisi-content video{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+
+        .backdrop{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-image: linear-gradient(to right,black,green);
+            mix-blend-mode: overlay;
+        }
+
+
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicara Alam</title>
+</head>
+
+<body>
+    <section id="main-content" class="puisi-content">
+        <header id="judul" class="puisi-judul">
+            <h2>Puisi Alam</h2>
+        </header>
+
+
+        <video src="video.mp4" autoplay loop muted></video>
+        <div id="overlay" class="backdrop"></div>
+
+        <div id="sajak" class="puisi-sajak">
+            <h2>tentang</h2>
+            <h3>hujan</h3>
+
+            <p>Bayu menyapa bawa awan nan sarat, <br>Titis hujan menjurai ke bumi, <br>Titisan kecil bisa mengganas,
+                <br>Menghambur dari langit yang berat, <br>Badai, petir saling bertingkah, <br>Mengejutkan penghuni
+                alam,
+                <br>Yang takut sembunyilah dalam selimut, <br>Begitu beri petanda, <br>Pada penghuni alam <br>...
+                Terpulanglah
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Incidunt culpa molestias nihil dolorem ex
+                nemo nobis
+                <br>reiciendis voluptatum,
+                <br>exercitationem consectetur temporibus eos, <br>numquam voluptatem illo nam eaque sit commodi
+                debitis.
+            </p>
+
+            <p>Sayembara Puisi Kebangsaan</p>
+
+            <div class="join-area">
+                <textarea name="" placeholder="new poem here" id="txtArea-puisi"></textarea>
+                <a id="join" href="#">sertai sekarang</a>
+            </div>
+        </div>
+
+        <ul class="pautan">
+            <li><a href=""><img src="https://i.ibb.co/42J79PL/Instagram.png"></a></li>
+            <li><a href=""><img src="https://i.ibb.co/1m6vNCx/Bawang.png"></a></li>
+            <li><a href=""><img src="https://i.ibb.co/KLBs6H5/Twitter.png"></a></li>
+            <li><a href=""><img src="https://i.ibb.co/sRh8xmQ/Facebook.png"></a></li>
+            <li><a href=""><img src="https://i.ibb.co/JKPY05b/Pinterest.png"></a></li>
+            <li><a href=""><img src="https://i.ibb.co/JyR3DmD/Email.png"></a></li>
+            <li><a href=""><img src="https://i.ibb.co/WvrvMtv/Whatsapp.png" alt=""></a></li>
+        </ul>
+
+    </section>
+</body>
+
+</html>
